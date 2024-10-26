@@ -109,7 +109,13 @@ export function Home() {
         <HomeContainer>
             <form onSubmit={handleSubmit(handleCreateNewCycle)} action="">
                 <CyclesContext.Provider 
-                    value={{ activeCycle, activeCycleId, markCurrentCycleAsFinished, amountSecondsPassed, setSecondsPassed }}>
+                    value={{ 
+                      activeCycle, 
+                      activeCycleId, 
+                      markCurrentCycleAsFinished, 
+                      amountSecondsPassed, 
+                      setSecondsPassed 
+                    }}>
                     <FormProvider {...newCycleForm}>
                       <NewCycleForm />
                     </FormProvider>
